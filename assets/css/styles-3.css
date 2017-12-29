@@ -313,6 +313,10 @@ used for profile image
 .printable-header {
    display:none;
 }
+.printable-header .profile-container, .printable-header .contact-container
+{
+  width: 240px;
+}
 
 @media print{
   @page {size: landscape}
