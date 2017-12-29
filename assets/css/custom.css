@@ -1,0 +1,46 @@
+.profile-img {
+  max-width: 100px;
+  margin-bottom: 15px;
+  border: 0px solid #fff;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.printable {
+  display:none;
+}
+.printable-header {
+   display:none;
+   border: 1px dotted gray;
+}
+.printable-header .profile-container {
+    width: 240px;
+    display: inline-block;
+}
+.printable-header .contact-container
+{
+   width: 240px;
+   display: inline-block;
+}
+
+@media print{
+  /*@page {size: landscape}*/
+  
+.printable {
+  display:block;
+}
+.printable-header {
+  margin-bottom:30px;
+}
+ .printable-header a[href]:after {
+    content: "";
+  }
+  .sidebar-wrapper {
+    display:none;
+  }
+  .experiences-section {
+    page-break-before: always;
+  }
+  .experiences-section .item {
+    page-break-inside: avoid;
+  }
+}
