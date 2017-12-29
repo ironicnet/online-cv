@@ -65,57 +65,57 @@ p {
   /*min-height: 800px; */
   color: #fff;
 }
-.sidebar-wrapper a {
+.sidebar-wrapper a, .printable-header a {
   color: #fff;
 }
-.sidebar-wrapper .profile-container {
+.sidebar-wrapper .profile-container, .printable-header .profile-container {
   padding: 30px;
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
 }
-.sidebar-wrapper .name {
+.sidebar-wrapper .name, .printable-header .name {
   font-size: 32px;
   font-weight: 900;
   margin-top: 0;
   margin-bottom: 10px;
 }
-.sidebar-wrapper .tagline {
+.sidebar-wrapper .tagline,  .printable-header .tagline {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
 }
-.sidebar-wrapper .profile {
+.sidebar-wrapper .profile,  .printable-header .profile {
   margin-bottom: 15px;
 }
-.sidebar-wrapper .contact-list .fa {
+.sidebar-wrapper .contact-list .fa, .printable-header .contact-list .fa {
   margin-right: 5px;
   font-size: 18px;
   vertical-align: middle;
 }
-.sidebar-wrapper .contact-list li {
+.sidebar-wrapper .contact-list li, .printable-header -contact-list li {
   margin-bottom: 15px;
 }
-.sidebar-wrapper .contact-list li:last-child {
+.sidebar-wrapper .contact-list li:last-child, .printable-header .contact-list li:last-child{
   margin-bottom: 0;
 }
-.sidebar-wrapper .contact-list .email .fa {
+.sidebar-wrapper .contact-list .email .fa, .printable-header .contact-list .email .fa  {
   font-size: 14px;
 }
-.sidebar-wrapper .container-block {
+.sidebar-wrapper .container-block, .printable-header .container-block {
   padding: 30px;
   padding-bottom:5px;
 }
-.sidebar-wrapper .container-block-title {
+.sidebar-wrapper .container-block-title, .printable-header .container-block-title {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 15px;
 }
-.sidebar-wrapper .degree {
+.sidebar-wrapper .degree, .printable-header .degree {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 5px;
@@ -310,5 +310,17 @@ used for profile image
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
+.printable-header {
+   display:none;
+}
 
-@media print{@page {size: landscape}}
+@media print{
+  @page {size: landscape}
+  
+.printable-header {
+   display:block;
+}
+  .sidebar-wrapper {
+    display:none;
+  }
+}
