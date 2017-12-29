@@ -334,4 +334,7 @@ used for profile image
   .sidebar-wrapper {
     display:none;
   }
+  .experiences-section .item {
+    page-break-inside: avoid;
+  }
 }
