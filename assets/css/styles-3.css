@@ -336,6 +336,9 @@ used for profile image
 .printable-header {
   margin-bottom:30px;
 }
+ .printable-header a[href]:after {
+    content: "";
+  }
   .sidebar-wrapper {
     display:none;
   }
