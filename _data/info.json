@@ -20,7 +20,7 @@
 	],
 	"skills":[
 		{"name":"C#", "notes":"My everyday language"},
-		{"name":"Unit Testing", "notes":"Always trying to enforcing it. Implemented it into monolithic projects"},
+		{"name":"Unit Testing", "notes":"Always trying to enforce it. Implemented it into monolithic projects"},
 		{"name":"Resourceful", "notes":"There is always a workaround"},
 	]
 }
