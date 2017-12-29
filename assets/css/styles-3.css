@@ -325,7 +325,7 @@ used for profile image
 }
 
 @media print{
-  @page {size: landscape}
+  /*@page {size: landscape}*/
   
 .printable-header {
    display:block;
