@@ -310,6 +310,9 @@ used for profile image
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
+.printable {
+  display:none;
+}
 .printable-header {
    display:none;
    border: 1px dotted gray;
@@ -327,8 +330,10 @@ used for profile image
 @media print{
   /*@page {size: landscape}*/
   
+.printable {
+  display:block;
+}
 .printable-header {
-   display:block;
   margin-bottom:30px;
 }
   .sidebar-wrapper {
