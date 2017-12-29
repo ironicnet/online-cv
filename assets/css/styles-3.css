@@ -312,10 +312,16 @@ used for profile image
 }
 .printable-header {
    display:none;
+   border: 1px dotted gray;
 }
-.printable-header .profile-container, .printable-header .contact-container
+.printable-header .profile-container {
+    width: 240px;
+    display: inline-block;
+}
+.printable-header .contact-container
 {
-  width: 240px;
+   width: 240px;
+   display: inline-block;
 }
 
 @media print{
@@ -323,6 +329,7 @@ used for profile image
   
 .printable-header {
    display:block;
+  margin-bottom:30px;
 }
   .sidebar-wrapper {
     display:none;
